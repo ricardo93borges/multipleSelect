@@ -4,6 +4,8 @@
     border: 1px solid #ccc;
     border-radius: 0 0 2px 2px;
     display: none;
+    position: absolute;
+    top: 30px;
 }
 
 .multipleSelectOptions label{
@@ -35,4 +37,5 @@
 
 .multipleSelectOptionsWrapper{
     float: left;
+    position: relative;
 }
