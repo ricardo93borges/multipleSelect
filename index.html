@@ -14,7 +14,7 @@
 </head>
 <body>
     <form name="multipleSelect">
-        <select name="multiple" class="multipleSelect" multiple="multiple">
+        <select name="multiple" id="multipleSelect" multiple="multiple">
             <option value="" class="placeholder" disabled selected>Choose one</option>
             <option value="1" selected>Option one</option>
             <option value="2" selected>Option two</option>
@@ -23,5 +23,11 @@
     </form>
     <script type="application/javascript" src="jquery-1.7.2.min.js"></script>
     <script type="application/javascript" src="js/multiple_select.min.js"></script>
+
+    <script>
+        $("document").ready(function () {
+            $("#multipleSelect").multipleSelect();
+        });
+    </script>
 </body>
 </html>
