@@ -46,6 +46,12 @@
         $(".multipleSelectOptionsWrapper .placeholder").click(function () {
             $('.multipleSelectOptions').toggle();
         });
+	$(document).click(function() {
+	    $('.multipleSelectOptions').hide();
+	});
+	$(".multipleSelectOptionsWrapper, .placeholder, .multipleSelectOptions").click(function(e) {
+    	    e.stopPropagation();
+	});	
 
         this.hide().attr('disabled', 'disabled');
     }
